@@ -1,11 +1,11 @@
-import { DioAccount } from "./DioAccount"
+import { DioAccount } from "./DioAccount";
 
 export class InvestmentAccount extends DioAccount {
-    constructor(name: string, accountNumber: number){
-        super(name, accountNumber)
-    }
+  constructor(name: string, accountNumber: number) {
+    super(name, accountNumber);
+  }
 
-    invest = (value: number) => {
-        this.balance += (value + 10)
-    }
+  invest = (value: number) => {
+    this.balance += value + 10;
+  };
 }
